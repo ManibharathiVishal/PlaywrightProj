@@ -1,0 +1,11 @@
+const {Given, When, Then} = require("@cucumber/cucumber")
+const {test, expect} = require("@playwright/test")
+const { chromium } = require('playwright');
+
+Given("I open the application", async ({page})=>{
+    await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+});
+
+When("I login with username and password", async ({page})=>{
+  await page.
+});
