@@ -1,0 +1,63 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "orangehrm-login;valid-login",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Valid login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to login page",
+            "match": {
+              "location": "src\\steps\\loginSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19545709699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user enters username and password",
+            "match": {
+              "location": "src\\steps\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4705120200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user should see dashboard",
+            "match": {
+              "location": "src\\steps\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1002309799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "orangehrm-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "OrangeHRM Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
