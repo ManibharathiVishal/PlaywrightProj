@@ -1,4 +1,5 @@
 name: Playwright Tests
+
 on:
   workflow_dispatch:
 
@@ -6,6 +7,10 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: BDDwithGitFlow
 
     steps:
       - uses: actions/checkout@v4
@@ -22,3 +27,10 @@ jobs:
 
       - name: Run Playwright tests
         run: npx playwright test
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: BDDwithGitFlow/playwright-report/
+          retention-days: 30
