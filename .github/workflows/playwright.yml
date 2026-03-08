@@ -13,6 +13,11 @@ on:
           - GuruAutom
           - PlayPrac
           - PlaywrightBDD
+          - PlaywrightPrac
+          - playwright-sdet-test-main
+          - PomStyle
+          - Practice
+          - RegAutom
 
 jobs:
   test:
