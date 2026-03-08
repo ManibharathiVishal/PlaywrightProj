@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {"test": "cucumber-js",
-              "report": "node generateReport.js"
-            },
+  "scripts": {
+    "test": "cucumber-js",
+    "report": "node generateReport.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
