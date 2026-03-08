@@ -5,7 +5,7 @@ const LoginPage = require('../pages/LoginPage');
 let browser, page, loginPage;
 
 Given('user navigates to login page', { timeout: 20000 }, async () => {
-  browser = await chromium.launch({ headless: false });
+  browser = await chromium.launch({ headless: true });
   page = await browser.newPage();
   loginPage = new LoginPage(page);
   await loginPage.open();
