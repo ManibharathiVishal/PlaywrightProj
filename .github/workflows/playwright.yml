@@ -2,6 +2,17 @@ name: Playwright Tests
 
 on:
   workflow_dispatch:
+    inputs:
+      project:
+        description: "Select project to run"
+        required: true
+        type: choice
+        options:
+          - BDDwithGitFlow
+          - Orange
+          - GuruAutom
+          - PlayPrac
+          - PlaywrightBDD
 
 jobs:
   test:
@@ -10,7 +21,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: BDDwithGitFlow
+        working-directory: ${{ github.event.inputs.project }}
 
     steps:
       - uses: actions/checkout@v4
